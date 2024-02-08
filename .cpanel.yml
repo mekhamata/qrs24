@@ -1,7 +1,5 @@
-##### THIS ALLOWS US TO DEPLOY THE SITE FROM A GIT REPO ######
 ---
 deployment:
   tasks:
     - export DEPLOYPATH=/repositories/qrs24/
-    #Copy the specific file to the destination from root:
-    - cp . $DEPLOYPATH
+    - /bin/cp . $DEPLOYPATH
