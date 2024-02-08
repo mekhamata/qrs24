@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/repositories/qrs24/
+    - export DEPLOYPATH=/home/qrsmco/repositories/qrs24/
     - /bin/cp . $DEPLOYPATH
