@@ -1,0 +1,269 @@
+.footerContainer {
+  background: #004b8d;
+  margin-top: 5px;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+.footerContainer_in {
+  flex: 1;
+  max-width: 990px;
+  display: flex;
+  flex-direction: row;
+}
+.footerForm {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+.footerText {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-inline-start: 10px;
+}
+.footerTitles {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.footerInfo {
+  flex: 3;
+}
+.footerSocial {
+  flex: 1;
+}
+.footerInfo ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-size: 15px;
+}
+.footerInfo ul li {
+  display: flex;
+  flex: 1;
+  max-height: 25px;
+  align-items: center;
+  color: white;
+}
+.footerInfo ul li a,
+.footerInfoLink {
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.3s ease-in-out;
+  margin-inline-start: 2px;
+}
+.footerInfo ul li a:hover,
+.footerInfoLink:hover {
+  opacity: 0.7;
+}
+
+.footerSocial ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.footerSocial ul li {
+  display: inline-block;
+  margin-inline-end: 5px;
+}
+.socialIcons {
+  width: 40px;
+  height: 40px;
+  background: #808080;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  color: white;
+  font-size: 25px;
+  margin-bottom: 5px;
+  transition: opacity 0.3s ease-in-out;
+}
+.socialIcons:hover {
+  opacity: 0.7;
+}
+/* footer form */
+.footerFormRow {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+.footerFormInput {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-inline-end: 20px;
+  height: 35px;
+}
+.footerFormInput input:focus,
+.footerFormTextArea textarea:focus {
+  outline: none;
+}
+.footerFormInput label {
+  position: absolute;
+  pointer-events: none;
+  transform: translate(0, 23px) scale(1);
+  transform-origin: top right;
+  transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 0;
+  /* right: 0; */
+}
+
+.footerFormInput label.filled {
+  transform: translate(0, 0px) scale(0.9);
+}
+.footerFormInput:focus-within label {
+  transform: translate(0, 0px) scale(0.9);
+  color: #ffffff;
+}
+.footerFormInput input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #7e878f;
+  color: white;
+  font-size: 14px;
+  padding: 0;
+}
+.footerFormInput input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #004b8d inset;
+}
+
+.footerFormTextAreaTitle {
+  color: white;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.footerFormTextArea {
+  padding-inline-end: 23px;
+}
+.footerFormTextArea textarea {
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  height: 90px;
+}
+.formSubscription {
+  display: flex;
+  flex: 3;
+  align-items: center;
+  color: white;
+  font-size: 14px;
+}
+.formSubmit {
+  flex: 1;
+  padding-inline-end: 20px;
+}
+.formSubmit button {
+  display: flex;
+  background: #9a9a9a;
+  border: none;
+  color: black;
+  font-size: 14px;
+  border-radius: 5px;
+  height: 35px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerFormInput input::-webkit-input-placeholder,
+.footerFormInput textarea::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: white;
+}
+.footerFormInput input::-moz-placeholder,
+.footerFormInput textarea::-moz-placeholder {
+  /* Firefox 19+ */
+  color: white;
+}
+.footerFormInput input:-ms-input-placeholder,
+.footerFormInput textarea:-ms-input-placeholder {
+  /* IE 10+ */
+  color: white;
+}
+.footerFormInput input:-moz-placeholder,
+.footerFormInput textarea:-moz-placeholder {
+  /* Firefox 18- */
+  color: white;
+}
+.cr_div {
+  background-color: #004b8d;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.logoContainer {
+  width: 46px;
+  height: 50px;
+}
+
+/* For extremely small screen devices (595px and below) */
+@media only screen and (max-width: 595px) {
+}
+
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Big screen devices2 (930px and above) */
+@media only screen and (min-width: 930px) {
+}
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {
+}
+
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+}
+
+/* common mikha */
+@media only screen and (max-width: 991px) {
+  .footerContainer {
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+  }
+  .footerContainer_in {
+    flex-direction: column;
+  }
+  .footerFormInput,
+  .formSubmit,
+  .footerFormTextArea,
+  .footerFormTextAreaTitle,
+  .formSubscription {
+    padding: 10px;
+  }
+}
+
+/* Small screen devices (992px and above) */
+@media only screen and (min-width: 992px) {
+  .footerForm {
+    border-inline-end: 1px solid #7e878f;
+    flex: 2;
+    padding-inline-end: 30px;
+  }
+  .footerText {
+    flex: 1;
+    padding-inline-start: 50px;
+  }
+}
+
+@keyframes hoverlink {
+  to {
+    opacity: 0.7;
+  }
+}

@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@300;500&display=swap");
+@font-face {
+  font-family: "EnSpoiler";
+  src: url("/assets/fonts/spoiler/EnSpoiler.eot");
+  src: url("/assets/fonts/spoiler/EnSpoiler.eot") format("embedded-opentype"),
+    url("/assets/fonts/spoiler/EnSpoiler.woff2") format("woff2"),
+    url("/assets/fonts/spoiler/EnSpoiler.woff") format("woff"),
+    url("/assets/fonts/spoiler/EnSpoiler.ttf") format("truetype"),
+    url("/assets/fonts/spoiler/EnSpoiler.svg#EnSpoiler") format("svg");
+}
+@font-face {
+  font-family: "FbSpoilerRegular";
+  src: url("/assets/fonts/spoiler/FbSpoilerRegular.eot");
+  src: url("/assets/fonts/spoiler/FbSpoilerRegular.eot")
+      format("embedded-opentype"),
+    url("/assets/fonts/spoiler/FbSpoilerRegular.woff2") format("woff2"),
+    url("/assets/fonts/spoiler/FbSpoilerRegular.woff") format("woff"),
+    url("/assets/fonts/spoiler/FbSpoilerRegular.ttf") format("truetype"),
+    url("/assets/fonts/spoiler/FbSpoilerRegular.svg#FbSpoilerRegular")
+      format("svg");
+}
+@font-face {
+  font-family: "EnSpoilerBold";
+  src: url("/assets/fonts/spoiler/EnSpoilerBold.eot");
+  src: url("/assets/fonts/spoiler/EnSpoilerBold.eot")
+      format("embedded-opentype"),
+    url("/assets/fonts/spoiler/EnSpoilerBold.woff2") format("woff2"),
+    url("/assets/fonts/spoiler/EnSpoilerBold.woff") format("woff"),
+    url("/assets/fonts/spoiler/EnSpoilerBold.ttf") format("truetype"),
+    url("/assets/fonts/spoiler/EnSpoilerBold.svg#EnSpoilerBold") format("svg");
+}
+@font-face {
+  font-family: "FbSpoilerBold";
+  src: url("/assets/fonts/spoiler/FbSpoilerBold.eot");
+  src: url("/assets/fonts/spoiler/FbSpoilerBold.eot")
+      format("embedded-opentype"),
+    url("/assets/fonts/spoiler/FbSpoilerBold.woff2") format("woff2"),
+    url("/assets/fonts/spoiler/FbSpoilerBold.woff") format("woff"),
+    url("/assets/fonts/spoiler/FbSpoilerBold.ttf") format("truetype"),
+    url("/assets/fonts/spoiler/FbSpoilerBold.svg#FbSpoilerBold") format("svg");
+}
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "FbSpoilerRegular", "EnSpoiler", "Rubik", "Roboto", sans-serif;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+.spinner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 60px;
+  width: 60px;
+  margin: 0px auto;
+  -webkit-animation: rotation 0.6s infinite linear;
+  -moz-animation: rotation 0.6s infinite linear;
+  -o-animation: rotation 0.6s infinite linear;
+  animation: rotation 0.6s infinite linear;
+  border-left: 6px solid rgba(0, 174, 239, 0.15);
+  border-right: 6px solid rgba(0, 174, 239, 0.15);
+  border-bottom: 6px solid rgba(0, 174, 239, 0.15);
+  border-top: 6px solid rgba(0, 174, 239, 0.8);
+  border-radius: 100%;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+@-moz-keyframes rotation {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(359deg);
+  }
+}
+@-o-keyframes rotation {
+  from {
+    -o-transform: rotate(0deg);
+  }
+  to {
+    -o-transform: rotate(359deg);
+  }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

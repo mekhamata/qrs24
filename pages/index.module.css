@@ -1,0 +1,202 @@
+.homeSlider {
+  display: flex;
+  flex-direction: column;
+}
+.absoluteCarousel {
+  position: relative;
+  width: 100%;
+  max-height: 282px;
+  margin-top: -280px;
+  /* z-index: 1; */
+}
+.carouselContainer {
+  width: 100%;
+}
+.carousel__item {
+  width: 100%;
+  background-color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel__item img {
+  width: 100%;
+}
+
+.carousel__prev,
+.carousel__next {
+  box-sizing: content-box;
+  border: 5px solid white;
+}
+
+.pageCover {
+  position: relative;
+  display: flex;
+  flex: 1;
+  height: 20vw;
+  background: #004a8d;
+  width: 100vw;
+  justify-content: flex-end;
+}
+/* #pageCover img {
+    width: 100%;
+  } */
+.coverTitle {
+  position: absolute;
+  margin-inline-end: 13%;
+  margin-top: 5%;
+  /* font-size: 2vw; */
+  font-size: calc(12px + 2vw);
+  color: #004b8d;
+  font-family: "EnSpoilerBold", "Rubik", "Roboto", sans-serif;
+}
+.pageData {
+  position: relative;
+  min-height: 500px;
+  background-image: url("/img/gal2.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  margin-top: -10.8%;
+  padding-top: 15%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+/* circles */
+/* circles */
+.homeCircles {
+  position: relative;
+  display: flex;
+  flex: 1;
+  /* min-height: 785px; */
+  background-color: transparent;
+  background-image: url("/img/gal4.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top center;
+  z-index: 1;
+  /* margin-top: -180px;
+  padding-top: 211px; */
+  margin-top: -12.8%;
+  padding-top: 13.8%;
+  padding-bottom: 2.8%;
+}
+.homeCircleContainer {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.homeCircleCenter {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  flex-direction: row;
+  max-width: 990px;
+}
+.homeCircleItem {
+  flex: 1 0 21%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.homeCircleItem__img_wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 150px;
+  padding-bottom: 50%;
+  margin-inline-start: 7%;
+}
+.homeCircleItem__img {
+  width: 100%;
+  width: 229px;
+  height: 229px;
+  background-image: url("/img/nonhovericon.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.homeCircleItem__img img {
+  max-width: 220px;
+}
+.homeCircleItem__title {
+  font-weight: bold;
+  color: #004b8d;
+  font-family: "EnSpoilerBold", "Rubik", "Roboto", sans-serif;
+  font-size: 18px;
+}
+.homeCircleItem__desc {
+  max-width: 250px;
+  text-align: center;
+  color: black;
+}
+.circlelink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.circlelink:hover .homeCircleItem__img {
+  background-image: url("/img/hovericon.png");
+}
+.circlelink:hover {
+  opacity: 0.8;
+}
+
+/* For extremely small screen devices (595px and below) */
+@media only screen and (max-width: 595px) {
+  .homeCircleCenter {
+    flex-direction: column;
+  }
+  .homeCircleItem {
+    margin-bottom: 20px;
+  }
+  .homeCircleItem__img_wrapper {
+    width: 236px;
+  }
+}
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 1630px) {
+  .homeCircles {
+    /* margin-top: -300px;
+      padding-top: 350px; */
+    min-height: 585px;
+  }
+}
+/* Medium screen devices (768px and above) */
+@media only screen and (max-width: 1629px) {
+  .homeCircles {
+    min-height: 500px;
+  }
+}
+/* Big screen devices2 (930px and above) */
+@media only screen and (min-width: 930px) {
+}
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {
+}
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+}
+/* common mikha */
+@media only screen and (max-width: 991px) {
+  .homeCircles {
+    margin-top: 0;
+    background-image: url("/img/circle.png");
+    background-position: top left;
+    padding-top: 0;
+  }
+}
+
+/* Small screen devices (992px and above) */
+@media only screen and (min-width: 992px) {
+}

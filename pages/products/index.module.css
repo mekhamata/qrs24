@@ -1,0 +1,180 @@
+.pageCover {
+  position: relative;
+  display: flex;
+  flex: 1;
+  height: 20vw;
+  background: #004a8d;
+  width: 100vw;
+  justify-content: flex-end;
+}
+/* #pageCover img {
+    width: 100%;
+  } */
+.coverTitle {
+  position: absolute;
+  left: 13%;
+  margin-top: 5%;
+  /* font-size: 2vw; */
+  font-size: calc(12px + 2vw);
+  color: #004b8d;
+  font-family: "EnSpoilerBold", "Rubik", "Roboto", sans-serif;
+}
+.pageData {
+  position: relative;
+  min-height: 500px;
+  background-image: url("/img/gal2.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  margin-top: -10.8%;
+  padding-top: 15%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+.pageDataIn {
+  display: flex;
+  flex: 1;
+  max-width: 990px;
+  flex-direction: column;
+}
+.pageNavigator {
+  display: flex;
+  flex: 1;
+  max-height: 35px;
+  justify-content: left;
+  align-items: center;
+  margin-top: -5%;
+  margin-bottom: 30px;
+  color: #828487;
+  font-size: 18px;
+}
+.navlink {
+  color: #828487;
+  text-decoration: none;
+  margin-inline-start: 2px;
+  margin-inline-end: 2px;
+  transition: color 0.3s ease-in-out;
+}
+.navlink__active,
+.navlink:hover {
+  color: #004a8d;
+}
+.navlink__active {
+  font-weight: bold;
+}
+.pageRealData {
+  flex: 1;
+}
+.contentParagraph {
+  margin-bottom: 40px;
+}
+.contentMainTitle h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+  color: #004b8d;
+  font-family: "FbSpoilerBold", "EnSpoilerBold", "Rubik", "Roboto", sans-serif;
+}
+.contentText {
+  color: black;
+  font-size: 20px;
+}
+
+/* circles */
+.homeCircleContainer {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.homeCircleCenter {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.homeCircleItem {
+  flex: 1 0 21%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.homeCircleItem__img {
+  width: 100%;
+  width: 229px;
+  height: 229px;
+  background-image: url("/img/nonhovericon.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline-end: 15px;
+  margin-bottom: 20px;
+}
+.homeCircleItem__img_wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 120px;
+  padding-bottom: 50%;
+  margin-inline-start: 7%;
+}
+/* .homeCircleItem__img img {
+  max-width: 100px;
+} */
+.homeCircleItem__title {
+  font-weight: bold;
+  color: #004b8d;
+  font-family: "EnSpoilerBold", "Rubik", "Roboto", sans-serif;
+  font-size: 18px;
+}
+.circlelink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  text-decoration: none;
+  /* transition: all 0.3s ease-in-out; */
+}
+.circlelink:hover .homeCircleItem__img {
+  background-image: url("/img/hovericon.png");
+}
+
+/* For extremely small screen devices (595px and below) */
+@media only screen and (max-width: 595px) {
+}
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 1630px) {
+}
+/* Medium screen devices (768px and above) */
+@media only screen and (max-width: 1629px) {
+}
+/* Big screen devices2 (930px and above) */
+@media only screen and (min-width: 930px) {
+}
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {
+}
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+}
+/* common mikha */
+@media only screen and (max-width: 991px) {
+  .pageDataIn {
+    flex-direction: column;
+    padding: 5px;
+  }
+  .pageNavigator {
+    margin-top: 0;
+  }
+  .homeCircleItem {
+    margin-bottom: 20px;
+  }
+}
+
+/* Small screen devices (992px and above) */
+@media only screen and (min-width: 992px) {
+}

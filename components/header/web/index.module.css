@@ -1,0 +1,94 @@
+.headerUlComponent {
+  list-style-type: none;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  height: 48px;
+  align-items: center;
+}
+.headerUlComponent li {
+  flex: 1;
+  text-align: center;
+  font-family: 'FbSpoilerBold', 'Rubik', 'Roboto', sans-serif;
+  font-size: 18px;
+}
+.navlink {
+  color: #7e878f;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+.navlink:hover {
+  /* animation: hoverlink 1.5s ease forwards; */
+  color: #004b8d;
+}
+.navlink_active {
+  /* padding-bottom: 2px;
+    border-bottom: 1px solid #004b8d; */
+  color: #004b8d;
+}
+/* sub ul */
+.headerUlComponent li .navlink:hover ul,
+.headerUlComponent li .navlink_active:hover ul {
+  display: block;
+}
+.subUl {
+  overflow: hidden;
+}
+.subUlRelative {
+  float: none;
+  margin: auto;
+  width: 100%;
+  max-width: 133px;
+}
+.subUlRelative ul {
+  display: none;
+  position: absolute;
+  list-style-type: none;
+  padding: 0 5px 0 5px;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: -5px 3px 5px -2px #cccccc;
+  box-shadow: -5px 3px 5px -2px #cccccc;
+  border-radius: 0 0 10px 10px;
+  width: 133px;
+  z-index: 1;
+}
+.subUlRelative ul li {
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+.subUlRelative ul li:last-child {
+  border-bottom: none;
+}
+.subUlRelative ul li a,
+.subMenuLink {
+  font-size: 14px;
+  color: black;
+  font-family: 'FbSpoiler', 'Rubik', 'Roboto', sans-serif;
+}
+/* .subanimation-enter-active {
+    animation: subuldown 0.3s ease;
+  }
+  .subanimation-leave-active {
+  } */
+
+/* @keyframes hoverlink {
+    from {
+      opacity: 1;
+    }
+    to {
+      color: #004b8d;
+      padding-bottom: 2px;
+    }
+  } */
+/* @keyframes subuldown {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  } */

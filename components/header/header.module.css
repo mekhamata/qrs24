@@ -1,0 +1,189 @@
+.headerPass {
+  margin: 0;
+  padding: 0;
+  min-height: 48px;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 5px solid #7e878f;
+}
+.headerBlue {
+  display: flex;
+  flex: 3;
+  min-height: 48px;
+  flex-direction: column;
+}
+.headerBlueIn {
+  display: flex;
+  flex-direction: row;
+  background-color: #004b8d;
+  /* background-image: url("/img/bluecurve.png"); */
+  background-repeat: no-repeat;
+  /* background-position: top left; */
+  background-size: 82px 49px;
+  min-height: 48px;
+}
+.menuUl {
+  display: flex;
+}
+.headerAddress {
+  display: flex;
+  flex: 1;
+  color: white;
+  justify-content: flex-end;
+  text-align: left;
+  padding-inline-end: 50px;
+  font-size: 16px;
+  align-items: center;
+}
+.headerAddress a,
+.headerAddressLink {
+  color: white;
+  text-decoration: none;
+  margin-inline-start: 5px;
+  margin-inline-end: 5px;
+  transition: opacity 0.3s ease-in-out;
+}
+.headerAddressLink:hover {
+  opacity: 0.7;
+}
+.headerAddress a span,
+.headerAddressSpan {
+  display: none;
+}
+.headerWhite {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 2vh;
+}
+.logoDiv {
+  margin-top: 10px;
+  flex: 2;
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.logoContainer {
+  width: 154px;
+  height: 82px;
+}
+.catalogBtn {
+  flex: 1;
+  height: 91px;
+  margin-top: 47px;
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.catalogBtnIn {
+  flex: 1;
+  width: 91px;
+  background-repeat: no-repeat;
+  /* background-color: red; */
+  flex-direction: row;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 22px;
+  font-family: "FbSpoilerBold", "Rubik", "Roboto", sans-serif;
+  padding-inline-end: 30px;
+  padding-top: 5px;
+}
+.catalogBtnIn a,
+.catalogBtnInLink {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+}
+.headerUlComponentContainer {
+  display: flex;
+  flex: 1;
+}
+.headerBarIcons {
+  margin: 5px;
+}
+/* #headerUlComponent {
+  list-style-type: none;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  height: 48px;
+  align-items: center;
+}
+#headerUlComponent li {
+  flex: 1;
+  text-align: center;
+  font-family: 'FbSpoilerBold';
+  font-size: 18px;
+}
+.navlink {
+  color: #7e878f;
+  text-decoration: none;
+}
+.navlink:hover {
+  color: #004b8d;
+}
+.navlink_active {
+  text-decoration: underline;
+} */
+
+/* For extremely small screen devices (595px and below) */
+@media only screen and (min-width: 596px) {
+  .headerBarIcons {
+    display: none;
+  }
+}
+@media only screen and (max-width: 595px) {
+  .headerBlueIn {
+    background-image: none;
+    border-radius: 0 0 0 15px;
+  }
+  .headerAddress {
+    padding-inline-end: 0;
+  }
+  .headerBarText {
+    display: none;
+  }
+}
+
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Big screen devices2 (930px and above) */
+@media only screen and (min-width: 930px) {
+  .headerAddress a span,
+  .headerAddressSpan {
+    display: inline-block;
+    margin-inline-start: 5px;
+  }
+}
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {
+}
+
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+}
+
+/* common mikha */
+@media only screen and (max-width: 991px) {
+  .headerAddress {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* Small screen devices (992px and above) */
+@media only screen and (min-width: 992px) {
+}
