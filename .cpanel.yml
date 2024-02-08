@@ -2,6 +2,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/qrsmco/repositories/qrs24/
+    - export DEPLOYPATH=/repositories/qrs24/
     #Copy the specific file to the destination from root:
     - cp . $DEPLOYPATH
