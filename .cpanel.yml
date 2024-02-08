@@ -3,10 +3,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/qrsmco/repositories/qrs24/
-    - /bin/cp -R .vscode $DEPLOYPATH
-    - /bin/cp -R assets $DEPLOYPATH
-    - /bin/cp -R css $DEPLOYPATH
-    - /bin/cp -R fonts $DEPLOYPATH
-    - /bin/cp -R img $DEPLOYPATH
-    - /bin/cp -R js $DEPLOYPATH
-    /bin/cp index.html $DEPLOYPATH
+    #Copy the specific file to the destination from root:
+    - cp . $DEPLOYPATH
